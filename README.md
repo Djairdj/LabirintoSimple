@@ -1,6 +1,5 @@
-## Getting Started
+## Labirinto melhorado da versão disponibilizada no curso de Formação Inicial e Continuada - Instituto Metrópole Digital
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
 
