@@ -1,5 +1,5 @@
 public class Tabuleiro3 {
-    private static final int QNT_LINHAS = 30;
+    private static final int QNT_LINHAS = 10;
     private static final int QNT_COLUNAS = 10;
     private static final String TETO = " ▂";
     private static final String PISO = /* "▔"; */ "█";
