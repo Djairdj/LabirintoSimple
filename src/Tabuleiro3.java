@@ -9,7 +9,7 @@ public class Tabuleiro3 {
     private static final String SEM_SAIDA = "X";
     private static final String START = "⛹";
     private static final String DESTINO = "Φ";
-    private static final float PROBABILIDADE = 0.5f;
+    private static final float PROBABILIDADE = 0.7f;
     private static String subindo = "▲";
     private static String descendo = "▼";
     private static String direita = "►";
@@ -22,7 +22,7 @@ public class Tabuleiro3 {
     private static int recursiva = 0;
 
     private static String[][] tabuleiro;
-    private static int delay = 900;
+    private static int delay = 800;
 
     private static void inicializarMatriz() {
         criaTabuleiro(tabuleiro);
@@ -68,7 +68,7 @@ public class Tabuleiro3 {
             colunaInicio = gerarNumero(1, QNT_COLUNAS - 2);
         }
         tabuleiro[linhaInicio][colunaInicio] = ajuste(START);
-        
+
         linhaDestino = gerarNumero(1, QNT_LINHAS - 2);
         colunaDestino = gerarNumero(1, QNT_COLUNAS - 2);
         while (!(tabuleiro[linhaDestino][colunaDestino].equals(ajuste(VAZIO)))) {
@@ -217,11 +217,8 @@ public class Tabuleiro3 {
             }
         }
     }
-
     public static void main(String[] a) {
-        
-            start();
-            System.out.printf("Ocorreram %d recursões.\t", recursiva);
-        
+        start();
+        System.out.printf("Ocorreram %d recursões.\t", recursiva);
     }
 }
